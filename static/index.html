@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>示例鳗场</title>
+  <script src="static/page-session.js?v=1" data-session-scope="eel" data-session-required="1"></script>
+  <link rel="stylesheet" href="static/style.css?v=34">
+</head>
+<body>
+  <header class="appbar">
+    <button class="icon-btn" id="backBtn" aria-label="返回" hidden>
+      <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <div class="brand-mark" id="brandMark">一</div>
+    <div class="appbar-title"><b id="title">示例鳗场</b><small id="subtitle"></small></div>
+    <div class="appbar-right" id="appbarRight"></div>
+  </header>
+  <div class="toast" id="toast"></div>
+
+  <main id="view"></main>
+
+  <nav class="bottomnav" id="bottomnav" hidden>
+    <button data-page="home"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg></span><span>首页</span></button>
+    <button data-page="today"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></span><span>每日</span></button>
+    <button data-page="pond"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg></span><span>期报</span></button>
+    <button data-page="report"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 20V11M12 20V5M19 20v-6"/></svg></span><span>报表</span></button>
+    <button data-page="more"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></svg></span><span>更多</span></button>
+  </nav>
+
+  <dialog id="sheet"><div class="sheet" id="sheetBody"></div></dialog>
+  <dialog id="confirm" class="confirm-dialog"><div class="sheet" id="confirmBody"></div></dialog>
+
+  <script src="static/sale-calc.js?v=34"></script>
+  <script src="static/app.js?v=36"></script>
+</body>
+</html>

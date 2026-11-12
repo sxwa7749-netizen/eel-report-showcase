@@ -1,0 +1,7 @@
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+openpyxl==3.1.5
+itsdangerous==2.2.0
+python-multipart==0.0.32
+defusedxml==0.7.1
+maxminddb==2.8.2
